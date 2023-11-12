@@ -1,0 +1,8 @@
+
+# Test if the service is up
+curl -i -X GET localhost:8088/api/v1/hey
+
+# Post to the Foo endpoint
+curl -i -H "Content-Type: application/json" -X POST -d '{
+        "message": "This is the input message."
+    }' localhost:8088/api/v1/foo
